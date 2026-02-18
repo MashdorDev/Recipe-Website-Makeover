@@ -6,7 +6,7 @@ const recipes = [
         prepTime: 15,
         difficulty: "easy",
         rating: 4.5,
-        image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3LFyDFJa_hV8WL_w58ILXmN47nky3JsbQKQ&s",
         description: "Fluffy, golden pancakes perfect for weekend mornings. Serve with maple syrup and fresh berries.",
         ingredients: [
             "2 cups all-purpose flour",
@@ -62,7 +62,7 @@ const recipes = [
         prepTime: 25,
         difficulty: "medium",
         rating: 4.7,
-        image: "https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?w=400&h=300&fit=crop",
+        image: "https://silkroadrecipes.com/wp-content/uploads/2025/02/Spaghetti-alla-Carbonara-square.jpg",
         description: "Creamy Italian pasta dish with eggs, cheese, pancetta, and black pepper. A true Roman classic.",
         ingredients: [
             "1 lb spaghetti",
@@ -183,7 +183,7 @@ const recipes = [
         prepTime: 25,
         difficulty: "medium",
         rating: 4.1,
-        image: "https://images.unsplash.com/photo-1553979459-d2229ba7433a?w=400&h=300&fit=crop",
+        image: "https://loveonetoday.com/wp-content/uploads/2018/01/Love-One-Today-Avocado-Recipes-Twitter-Grilled-Rosemary-Chicken-Sandwich.jpg",
         description: "Juicy grilled chicken breast on a toasted bun with fresh vegetables and creamy avocado.",
         ingredients: [
             "4 chicken breasts",
@@ -214,7 +214,7 @@ const recipes = [
         prepTime: 30,
         difficulty: "medium",
         rating: 4.6,
-        image: "https://images.unsplash.com/photo-1565299585323-38174c70a7df?w=400&h=300&fit=crop",
+        image: "https://supervalu.ie/thumbnail/800x600/var/files/real-food/recipes/2017/minced-beef-tacos-recipe.jpg",
         description: "Flavorful seasoned ground beef tacos with fresh toppings and warm tortillas.",
         ingredients: [
             "1 lb ground beef",
