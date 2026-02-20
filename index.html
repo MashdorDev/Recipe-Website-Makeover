@@ -10,42 +10,30 @@
     <header class="main-header">
         <div class="header-content">
             <h1 class="site-title">Tasty Bites</h1>
+            <div class="search-container">
+  <input type="text" class="recipe-search" placeholder="Search recipes...">
+</div>
             <nav class="main-nav">
                 <ul class="nav-list">
-                    <li><a href="#home" data-section="home">Home</a></li>
-                    <li><a href="#recipes" data-section="recipes">Recipes</a></li>
-                    <li><a href="#favorites" data-section="favorites" id="favorites-link">Favorites (<span id="favorites-count">0</span>)</a></li>
-                    <li><a href="#about" data-section="about">About</a></li>
+                    
+                    <li><a href="#recipes" data-section="recipes">recipes</a></li>
+                    <li><a href="#favorites" data-section="favorites" id="favorites-link">favorites (<span id="favorites-count">0</span>)</a></li> 
                 </ul>
             </nav>
         </div>
     </header>
-
-    <main class="main-content">
-        <section id="home" class="hero-section section active">
-            <div class="hero-content">
-                <h2 class="hero-title">Discover Amazing Recipes</h2>
-                <p class="hero-subtitle">Find your next favorite dish from our collection of delicious recipes</p>
-                <div class="search-container">
-                    <input type="text" id="recipe-search" placeholder="Search recipes..." class="search-input">
-                    <button id="search-btn" class="search-button">Search</button>
-                    <button id="clear-search" class="clear-button" style="display: none;">Clear</button>
-                </div>
-            </div>
+   <div class="tagline-container">
+  <h2 class="tagline">become your own personal chef, search for your favourite recipes and <i>get cooking</i></h2>
+</div>    
         </section>
-
         <section id="filters" class="filter-section">
-            <h3>Filter by Category</h3>
             <div class="filter-buttons">
                 <button class="filter-btn active" data-category="all">All Recipes</button>
-                <button class="filter-btn" data-category="breakfast">Breakfast</button>
-                <button class="filter-btn" data-category="lunch">Lunch</button>
-                <button class="filter-btn" data-category="dinner">Dinner</button>
-                <button class="filter-btn" data-category="dessert">Dessert</button>
-                <button class="filter-btn" data-category="vegetarian">Vegetarian</button>
+                <button class="filter-btn" data-category="breakfast">breakfast</button>
+                <button class="filter-btn" data-category="lunch">lunch</button>
+                <button class="filter-btn" data-category="dinner">dinner</button> 
             </div>
         </section>
-
         <section id="recipes" class="recipes-section section">
             <h2>All Recipes</h2>
             <div class="sort-controls">
@@ -63,7 +51,6 @@
                 <p>No recipes found. Try a different search term or category.</p>
             </div>
         </section>
-
         <section id="favorites" class="favorites-section section">
             <h2>Your Favorite Recipes</h2>
             <div id="favorites-grid" class="recipe-grid">
@@ -72,7 +59,6 @@
                 <p>No favorite recipes yet. Click the heart icon on any recipe to add it to your favorites!</p>
             </div>
         </section>
-
         <section id="about" class="about-section section">
             <h2>About Tasty Bites</h2>
             <p>Welcome to Tasty Bites, your ultimate destination for discovering and sharing amazing recipes. Our mission is to bring people together through the joy of cooking and eating delicious food.</p>
@@ -92,26 +78,85 @@
             </div>
         </section>
     </main>
-
-    <footer class="main-footer">
-        <div class="footer-content">
-            <p>&copy; 2024 Tasty Bites. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#privacy">Privacy Policy</a>
-                <a href="#terms">Terms of Service</a>
-                <a href="#contact">Contact Us</a>
             </div>
         </div>
     </footer>
-
     <div id="recipe-modal" class="modal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
             <div id="modal-recipe-content"></div>
         </div>
     </div>
-
     <script src="assets/js/recipes-data.js"></script>
     <script src="assets/js/app.js"></script>
+<div class="recipes-grid">
+  <!-- Breakfast Recipes -->
+  <div class="recipe-card" data-category="breakfast">
+    <img src="images/breakfast1.jpg" alt="Pancakes">
+    <h3>Pancakes</h3>
+    <p><strong>Prep Time:</strong> 20 mins</p>
+    <p><strong>Ingredients:</strong> Flour, Milk, Eggs, Sugar</p>
+    <p><strong>Difficulty:</strong> Easy</p>
+  </div>
+  <div class="recipe-card" data-category="breakfast">
+    <img src="images/breakfast2.jpg" alt="Avocado Toast">
+    <h3>Avocado Toast</h3>
+    <p><strong>Prep Time:</strong> 10 mins</p>
+    <p><strong>Ingredients:</strong> Bread, Avocado, Lemon, Salt</p>
+    <p><strong>Difficulty:</strong> Easy</p>
+  </div>
+  <div class="recipe-card" data-category="breakfast">
+    <img src="images/breakfast3.jpg" alt="Omelette">
+    <h3>Omelette</h3>
+    <p><strong>Prep Time:</strong> 15 mins</p>
+    <p><strong>Ingredients:</strong> Eggs, Cheese, Spinach, Salt</p>
+    <p><strong>Difficulty:</strong> Medium</p>
+  </div>
+  <!-- Lunch Recipes -->
+  <div class="recipe-card" data-category="lunch">
+    <img src="images/lunch1.jpg" alt="Caesar Salad">
+    <h3>Caesar Salad</h3>
+    <p><strong>Prep Time:</strong> 20 mins</p>
+    <p><strong>Ingredients:</strong> Lettuce, Croutons, Parmesan, Dressing</p>
+    <p><strong>Difficulty:</strong> Easy</p>
+  </div>
+  <div class="recipe-card" data-category="lunch">
+    <img src="images/lunch2.jpg" alt="Grilled Chicken Sandwich">
+    <h3>Grilled Chicken Sandwich</h3>
+    <p><strong>Prep Time:</strong> 25 mins</p>
+    <p><strong>Ingredients:</strong> Chicken, Bread, Lettuce, Tomato</p>
+    <p><strong>Difficulty:</strong> Medium</p>
+  </div>
+  <div class="recipe-card" data-category="lunch">
+    <img src="images/lunch3.jpg" alt="Quinoa Bowl">
+    <h3>Quinoa Bowl</h3>
+    <p><strong>Prep Time:</strong> 30 mins</p>
+    <p><strong>Ingredients:</strong> Quinoa, Veggies, Olive Oil, Lemon</p>
+    <p><strong>Difficulty:</strong> Medium</p>
+  </div>
+  <!-- Dinner Recipes -->
+  <div class="recipe-card" data-category="dinner">
+    <img src="images/dinner1.jpg" alt="Spaghetti Bolognese">
+    <h3>Spaghetti Bolognese</h3>
+    <p><strong>Prep Time:</strong> 45 mins</p>
+    <p><strong>Ingredients:</strong> Pasta, Beef, Tomato Sauce, Garlic</p>
+    <p><strong>Difficulty:</strong> Medium</p>
+  </div>
+  <div class="recipe-card" data-category="dinner">
+    <img src="images/dinner2.jpg" alt="Grilled Salmon">
+    <h3>Grilled Salmon</h3>
+    <p><strong>Prep Time:</strong> 35 mins</p>
+    <p><strong>Ingredients:</strong> Salmon, Lemon, Herbs, Olive Oil</p>
+    <p><strong>Difficulty:</strong> Medium</p>
+  </div>
+  <div class="recipe-card" data-category="dinner">
+    <img src="images/dinner3.jpg" alt="Veggie Stir Fry">
+    <h3>Veggie Stir Fry</h3>
+    <p><strong>Prep Time:</strong> 25 mins</p>
+    <p><strong>Ingredients:</strong> Mixed Veggies, Soy Sauce, Garlic, Rice</p>
+    <p><strong>Difficulty:</strong> Easy</p>
+  </div>
+</div>
 </body>
 </html>
+
